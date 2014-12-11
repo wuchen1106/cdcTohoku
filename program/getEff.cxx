@@ -19,7 +19,7 @@ int main(int argc, char** argv){
 	TFile * output = new TFile("../root/eff.root","UPDATE");
 	for (int runNo = startRunNo; runNo<=endRunNo; runNo++){
 		TChain * c = new TChain("tree","tree");
-		c->Add(Form("../run_%06d_built.root",runNo));
+		c->Add(Form("../root/run_%06d_built.root",runNo));
 		int tdcNhit[66];
 		int ch2x[66] = {0,1,1,
 			2,3,3,
