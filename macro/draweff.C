@@ -201,7 +201,7 @@
 	t->Draw(Form("(THRP3-%lf)/%lf:runNo>>h24",THRmin*1.1-THRmax*0.1,(THRmax-THRmin)*1.2),cut,"SAMELP");
 	legend = new TLegend(0.11,0.71,0.4,0.89);
 	legend->AddEntry(h21,"Efficiency of Chamber Corner Wire(#20)");
-	legend->AddEntry(h22,"Efficiency of TrackerY Center Wire(#13)");
+	legend->AddEntry(h22,"Efficiency of Chamber Center Wire(#13)");
 	legend->AddEntry(h23,"HV on Chamber");
 	legend->AddEntry(h24,"Threshold on Chamber");
 	legend->SetLineColor(0);

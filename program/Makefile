@@ -25,23 +25,30 @@ LIBDIR += $(shell $(ROOTSYS)/bin/root-config --glibs)
 LIBS += -pthread -lm -ldl -rdynamic
 
 #--------------------------PART 3: about your own packages and the main program-------------------------------------------
-# Names of user defined packages
 
+# Names of user defined packages
 # Change this name to your program which contains the main function
-PROJECT = fit
+PROJECT1 = getPeaks
+PROJECT2 = fit
+
+.PHONY: all
+all: $(PROJECT2) $(PROJECT1)
 
 # Object list for user defined packages
 OBJ = 
 
-$(PROJECT): $(OBJ) $(PROJECT).cxx
-	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT).cxx $(OBJ) -o $(PROJECT)
+$(PROJECT1): $(OBJ) $(PROJECT1).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT1).cxx $(OBJ) -o $(PROJECT1)
+
+# Object list for user defined packages
+OBJ = 
+
+$(PROJECT2): $(OBJ) $(PROJECT2).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT2).cxx $(OBJ) -o $(PROJECT2)
 
 #--------------------------PART 4: about make options-------------------------------------------
 # You can create new options to realise special functions
 # Here is an example showing how to make clean and make a specified user defined package
 .PHONY: clean
 clean:
-	$(RM) $(PROJECT)
-
-.PHONY: all
-all: $(PROJECT)
+	$(RM) $(PROJECT1) $(PROJECT2)
