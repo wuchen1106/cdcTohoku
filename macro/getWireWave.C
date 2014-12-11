@@ -39,7 +39,9 @@
 	c->SetBranchAddress("tdcNhit",tdcNhit);
 	c->SetBranchAddress("clockNumberDriftTime",clockNumberDriftTime);
 	c->SetBranchAddress("adc",adc);
-	TCanvas * ca = new TCanvas("c","c",896,896);
+	TCanvas * ca = new TCanvas("c","c",1440,960);
+	TPad * p1 = new TPad("p1","p1",0,0,0.5,1);
+	TPad * p2 = new TPad("p2","p2",0.5,0,1,1);
 	for (Long64_t i = 0;(i+1)*50<c->GetEntries(); i++){
 		bool notDrawnYet = true;
 		for(int ii = 0; ii<100; ii++){
@@ -50,18 +52,29 @@
 	//			}
 	//		}
 			TH1D * h1 = new TH1D("h1","h1",64,-32,32);
+			TH1D * h2 = new TH1D("h2","h2",64,-32,32);
 			h1->GetYaxis()->SetRangeUser(200,350);
+			h2->GetYaxis()->SetRangeUser(200,350);
 			if (tdcNhit[ich]<=0) continue;
 			int offset = clockNumberDriftTime[ich][0];
 			for(int clk=0; clk<32; clk++){
-				h1->Fill(clk-offset,adc[ich][clk]);
+				if (h>240)
+					h1->Fill(clk-offset,adc[ich][clk]);
+				else
+					h2->Fill(clk-offset,adc[ich][clk]);
 			}
 			if (notDrawnYet){
+				p1->cd();
 				h1->Draw("LP");
+				p2->cd();
+				h2->Draw("LP");
 				notDrawnYet=false;
 			}
 			else{
+				p1->cd();
 				h1->Draw("LPSAME");
+				p2->cd();
+				h2->Draw("LPSAME");
 			}
 		}
 		ca->WaitPrimitive();
