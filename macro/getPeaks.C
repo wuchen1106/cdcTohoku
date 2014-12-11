@@ -39,8 +39,8 @@ int main(int argc, char** argv){
 				if (adc[iwire][clk]>height) height=adc[iwire][clk];
 			}
 			if (height!=-1){
-				adcwire=adc[iwire];
-//				std::cout<<"adc["<<iwire<<"] = "<<*(adc[iwire])<<"; adc["<<iwire<<"][0] = "<<adc[iwire][0]<<std::endl;
+				for (int j = 0; j < 32 ; j++)
+					adcwire[j]=adc[iwire][j];
 				t->Fill();
 			}
 		}
