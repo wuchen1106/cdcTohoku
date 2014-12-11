@@ -28,6 +28,8 @@ sed -i "s/@PT23\>/@PT2\&3/g" $log
 sed -i "s/@PT\>/@PT2\&3/g" $log
 sed -i "s/@prototype-II\>/@PT2/g" $log
 sed -i "s/@prototype-III\>/@PT3/g" $log
+sed -i "s/Vth for prototype-\>/Vth@PT/g" $log
+sed -i "s/Vth for all is/Vth@PT2&3/g" $log
 
 sed -i "s/HV of PT2 and PT3 (HV\>/HV@PT23/g" $log
 sed -i "s/_PT2/@PT2/g" $log
