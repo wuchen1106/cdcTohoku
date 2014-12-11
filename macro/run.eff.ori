@@ -1,8 +1,30 @@
+000079  9 4 tracking chambers are available  prototype chambers are still commissioning
+000080  9 4 tracking chambers are available  prototype chambers are still commissioning  HV@PT2 1392 1700
+000081 10 pedestal run after prototype-2 3 recovered
+000082 10 pedestal  100 Hz CLK Trigger
+000083 10 pedestal  100 Hz CLK Trigger
+000084 10 pedestal  100 Hz CLK Trigger
+000084 10 pedestal  100 Hz CLK Trigger
+000085 10 pedestal  100 Hz CLK Trigger
+000086 10 pedestal  100 Hz CLK Trigger
+000087 10 pedestal  100 Hz CLK Trigger  HV@TXY1 is off  
+000088 10 pedestal  100 Hz CLK Trigger  HV@TXY1 is off  
+000089 10 pedestal  100 Hz CLK Trigger  HV@TXY1 2 1750  HV@PT2 3 1700
+000090 10 pedestal  100 Hz CLK Trigger  HV@TXY1 2 1750  HV@PT2 3 1700
+000091  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000092  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000093  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000094  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000095  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000096 10 junk 
+000097  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000098  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000099  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700
 000100  9 beam_on  HV@TXY1&2 1800 to estimate the tracking efficency
 000101  9 beam_on  HV@TXY1&2 1800 
-000102  9 beam_on  veto_window=50usec  efficiency test
+000102  9 beam_on  veto_window 50usec  efficiency test
 000103 10 junk  beam_on but trigger is NIM CLK
-000104  9 beam_on  veto_window=100usec  HV@TXY1&2 1750  HV@PT2 1379  HV@PT3 1433  Vth for all is 3750
+000104  9 beam_on  veto_window 100usec  HV@TXY1&2 1750  HV@PT2 1379  HV@PT3 1433  Vth for all is 3750
 000105 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3760
 000106 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3770
 000107 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3780
@@ -46,7 +68,7 @@
 000145  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
 000146  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
 000147  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
-000148  5 pedestal run  100Hz CLK Trigger  HV@PT2&3 1600  HV@TXY1&2 1750  Gas is He Ethane=50 50 after run 148
+000148  5 pedestal run  100Hz CLK Trigger  HV@PT2&3 1600  HV@TXY1&2 1750  Gas is He Ethane 50 50 after run 148
 000149  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1600  HV@TXY1&2 1750
 000150  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1650  HV@TXY1&2 1750
 000151  0 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1700  HV@TXY1&2 1750
@@ -67,7 +89,7 @@
 000166  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2400  
 000167 99 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2450
 000168  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2500
-000169  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT 2550
+000169  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2550
 000170 10 junk
 000171 10 junk  mistake command
 000172  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2600
@@ -93,3 +115,35 @@
 000192  9 test_run  HV@TXY1&2 1850 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3750
 000193  2 beam_on  HV@TXY1&2 1850 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3750
 000194  2 beam_on  HV@TXY1&2 1850 HV@PT2&3 2100 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000195  5 noise_check
+000196  5 noise_check  noise at TY2 is reduced
+000197  5 noise_check  no change at TX1
+000198  9 check_efficiency of Trackers
+000199  9 check_efficiency of tracker
+000200  9 check_HV Tracker HV setting is finished  HV scan start
+000201  9 check_HV of PT2 and PT3  HV 2150 
+000202  9 check_HV of PT2 and PT3  HV 2200 
+000203  9 check_HV of PT2 and PT3  HV 2250 
+000204  9 check_HV of PT2 and PT3  HV 2300 
+000205  9 check_HV of PT2 and PT3  HV 2350 
+000206  9 check_HV of PT2 and PT3  HV@PT2   2300  HV@PT3   2400 
+000207  9 check_HV of PT2 and PT3  HV@PT2   2350  HV@PT3   2450 
+000208  9 check_HV of PT2 and PT3  2050 
+000209  9 check_HV of PT2 and PT3  2000 
+000210  9 check_HV of PT2 and PT3  1950 
+000211  9 check_HV of PT2 and PT3  1900 
+000212  9 check_HV of PT2 and PT3  1800 
+000213  9 check_HV of PT2 and PT3  1700 
+000214  9 check_HV of PT2 and PT3  1600  
+000215  9 Vth@PT2&3 3760 
+000216  9 Vth@PT2&3 3770 
+000217  9 Vth@PT2&3 3780 
+000218  9 Vth@PT2&3 3790 
+000219  9 Vth Scan  Vth@PT3   3780  Vth@PT2   3800 
+000220  9 Vth Scan  Vth@PT3   3780  Vth@PT2   3810 
+000221  3 HV@PT2 2300 HV@PT3 2300  Vth@PT2 3800  Vth@PT3 3780
+000222  3 HV@PT2 2300 HV@PT3 2300  Vth@PT2 3800  Vth@PT3 3780
+000223  3 HV@PT2 2200 HV@PT3 2200  Vth@PT2 3800  Vth@PT3 3780
+000224  3 HV@PT2 2200 HV@PT3 2200  Vth@PT2 3800  Vth@PT3 3780
+000225  3 HV@PT2 2200 HV@PT3 2200  Vth@PT2 3800  Vth@PT3 3780
+000226  3 HV@PT2 2300 HV@PT3 2300  Vth@PT2 3800  Vth@PT3 3780
