@@ -1,0 +1,95 @@
+000100  9 beam_on  HV@TXY1&2 1800 to estimate the tracking efficency
+000101  9 beam_on  HV@TXY1&2 1800 
+000102  9 beam_on  veto_window=50usec  efficiency test
+000103 10 junk  beam_on but trigger is NIM CLK
+000104  9 beam_on  veto_window=100usec  HV@TXY1&2 1750  HV@PT2 1379  HV@PT3 1433  Vth for all is 3750
+000105 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3760
+000106 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3770
+000107 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3780
+000108 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3790
+000109 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3800
+000110 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3740
+000111 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3730
+000112 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3720
+000113 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3710
+000114 10 junk  crashed
+000115 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3700
+000116  9 test_run  same condition as run104  Vth for prototype-2&3 is 3700
+000117  9 test_run  same condition as run104  Vth for prototype-2&3 is 3710
+000118  9 test_run  same condition as run104  Vth for prototype-2&3 is 3720
+000119  9 test_run  same condition as run104  Vth for prototype-2&3 is 3730
+000120  9 test_run  same condition as run104  Vth for prototype-2&3 is 3740
+000121  9 test_run  same condition as run104  Vth for prototype-2&3 is 3750
+000122  9 test_run  same condition as run104  Vth for prototype-2&3 is 3760
+000123  9 test_run  same condition as run104  Vth for prototype-2&3 is 3770
+000124  9 test_run  same condition as run104  Vth for prototype-2&3 is 3780
+000125  9 test_run  same condition as run104  Vth for prototype-2&3 is 3790
+000126  9 test_run  same condition as run104  Vth for prototype-2&3 is 3800
+000127  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3730
+000128  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3770
+000129  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1330
+000130  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1380
+000131  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1430
+000132  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1480
+000133  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1530
+000134  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1580
+000135  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1630
+000136  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1680
+000137  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1730
+000138  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1780
+000139  9 test_run  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000140  9 test_run  Vth@PT2 3750  Vth@PT3 3750  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000141  9 test_run  Vth@PT2 3770  Vth@PT3 3770  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000142  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000143  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000144  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000145  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000146  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000147  1 beam_on  Vth@PT2 3730  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2 1630  HV@PT3 1680
+000148  5 pedestal run  100Hz CLK Trigger  HV@PT2&3 1600  HV@TXY1&2 1750  Gas is He Ethane=50 50 after run 148
+000149  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1600  HV@TXY1&2 1750
+000150  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1650  HV@TXY1&2 1750
+000151  0 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1700  HV@TXY1&2 1750
+000152  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1750  HV@TXY1&2 1750
+000153  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@PT2&3 1800  HV@TXY1&2 1750
+000154  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 1850
+000155  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 1900
+000156  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 1950
+000157  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2000
+000158  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2050
+000159  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2100
+000160  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2150
+000161  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2200
+000162 10 junk  misstake command
+000163  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2250
+000164  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2300
+000165  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2350
+000166  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2400  
+000167 99 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2450
+000168  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2500
+000169  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT 2550
+000170 10 junk
+000171 10 junk  mistake command
+000172  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1750  HV@PT2&3 2600
+000173  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1800 HV@PT2&3 1900
+000174 10 junk
+000175  9 test_run  Vth@PT2&3 3730  Vth@TXY1&2 3750  HV@TXY1&2 1850  HV@PT2&3 1900
+000176  9 test_run  HV@TXY1&2 1750 HV@PT2&3 1900 Vth@TXY1&2 3750 Vth@PT2&3 3740
+000177  9 test_run  HV@TXY1&2 1750 HV@PT2&3 1900 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000178  9 test_run  HV@TXY1&2 1750 HV@PT2&3 1900 Vth@TXY1&2 3750 Vth@PT2&3 3760
+000179  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3740
+000180  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000181  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3760
+000182  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3770
+000183  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3780
+000184  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3740
+000185  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000186  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3760
+000187  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3770
+000188  9 test_run  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3780
+000189  2 beam_on  HV@TXY1&2 1750 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000190  9 test_run  HV@TXY1&2 1900 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000191  9 test_run  HV@TXY1&2 1900 HV@PT2&3 2600 Vth@TXY1&2 3760 Vth@PT2&3 3750
+000192  9 test_run  HV@TXY1&2 1850 HV@PT2&3 2600 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000193  2 beam_on  HV@TXY1&2 1850 HV@PT2&3 2300 Vth@TXY1&2 3750 Vth@PT2&3 3750
+000194  2 beam_on  HV@TXY1&2 1850 HV@PT2&3 2100 Vth@TXY1&2 3750 Vth@PT2&3 3750
