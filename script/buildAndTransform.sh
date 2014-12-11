@@ -1,4 +1,12 @@
 #!/bin/bash
+if [ ! $# == 2 ]
+then
+	echo "$0 [startNo] [endNo]"
+	exit 1
+fi
+startNo=$1
+endNo=$2
+
 build(){
    runNo=$1
    startNo=$2
@@ -17,7 +25,7 @@ build(){
 #build 108 0 5
 #build 109 0 6
 #build 116 0 3
-for (( i=216; i<=226; i++ ))
+for (( i=$startNo; i<=$endNo; i++ ))
 do
    n=`ls -l /data3/work/data/run_000"$i"_*.dat|wc -l`
    ((n--))

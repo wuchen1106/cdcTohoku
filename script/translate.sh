@@ -1,5 +1,5 @@
 #!/bin/bash
-log="run.eff.ori"
+log="../run.eff.ori"
 sed -i "s/:/ /g" $log
 sed -i "s/->/ /g" $log
 sed -i "s/,/ /g" $log
