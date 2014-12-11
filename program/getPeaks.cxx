@@ -67,5 +67,5 @@ int main(int argc, char** argv){
 
 void print_usage(char* prog_name)
 {
-	fprintf(stderr,"\t\t%s 225\n",prog_name);
+	fprintf(stderr,"\t%s [runNo]\n",prog_name);
 }

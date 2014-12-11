@@ -30,9 +30,10 @@ LIBS += -pthread -lm -ldl -rdynamic
 # Change this name to your program which contains the main function
 PROJECT1 = getPeaks
 PROJECT2 = fit
+PROJECT3 = getEff
 
 .PHONY: all
-all: $(PROJECT2) $(PROJECT1)
+all: $(PROJECT3) $(PROJECT2) $(PROJECT1)
 
 # Object list for user defined packages
 OBJ = 
@@ -40,11 +41,11 @@ OBJ =
 $(PROJECT1): $(OBJ) $(PROJECT1).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT1).cxx $(OBJ) -o $(PROJECT1)
 
-# Object list for user defined packages
-OBJ = 
-
 $(PROJECT2): $(OBJ) $(PROJECT2).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT2).cxx $(OBJ) -o $(PROJECT2)
+
+$(PROJECT3): $(OBJ) $(PROJECT3).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT3).cxx $(OBJ) -o $(PROJECT3)
 
 #--------------------------PART 4: about make options-------------------------------------------
 # You can create new options to realise special functions
