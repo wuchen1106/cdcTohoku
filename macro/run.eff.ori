@@ -9,44 +9,44 @@
 000086 10 pedestal  100 Hz CLK Trigger
 000087 10 pedestal  100 Hz CLK Trigger  HV@TXY1 is off  
 000088 10 pedestal  100 Hz CLK Trigger  HV@TXY1 is off  
-000089 10 pedestal  100 Hz CLK Trigger  HV@TXY1 2 1750  HV@PT2 3 1700
-000090 10 pedestal  100 Hz CLK Trigger  HV@TXY1 2 1750  HV@PT2 3 1700
-000091  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000092  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000093  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000094  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000095  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
+000089 10 pedestal  100 Hz CLK Trigger  HV@TXY1&2 1750  HV@PT2&3 1700
+000090 10 pedestal  100 Hz CLK Trigger  HV@TXY1&2 1750  HV@PT2&3 1700
+000091  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000092  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000093  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000094  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000095  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
 000096 10 junk 
-000097  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000098  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700  daq crashed 
-000099  9 beam_on  HV@TXY1 2 1750  HV@PT2 3 1700
+000097  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000098  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700  daq crashed 
+000099  9 beam_on  HV@TXY1&2 1750  HV@PT2&3 1700
 000100  9 beam_on  HV@TXY1&2 1800 to estimate the tracking efficency
 000101  9 beam_on  HV@TXY1&2 1800 
 000102  9 beam_on  veto_window 50usec  efficiency test
 000103 10 junk  beam_on but trigger is NIM CLK
-000104  9 beam_on  veto_window 100usec  HV@TXY1&2 1750  HV@PT2 1379  HV@PT3 1433  Vth for all is 3750
-000105 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3760
-000106 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3770
-000107 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3780
-000108 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3790
-000109 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3800
-000110 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3740
-000111 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3730
-000112 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3720
-000113 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3710
+000104  9 beam_on  veto_window 100usec  HV@TXY1&2 1750  HV@PT2 1379  HV@PT3 1433  Vth@PT2&3 3750
+000105 10 junk  test_run  same condition as run104  Vth@PT2&3 3760
+000106 10 junk  test_run  same condition as run104  Vth@PT2&3 3770
+000107 10 junk  test_run  same condition as run104  Vth@PT2&3 3780
+000108 10 junk  test_run  same condition as run104  Vth@PT2&3 3790
+000109 10 junk  test_run  same condition as run104  Vth@PT2&3 3800
+000110 10 junk  test_run  same condition as run104  Vth@PT2&3 3740
+000111 10 junk  test_run  same condition as run104  Vth@PT2&3 3730
+000112 10 junk  test_run  same condition as run104  Vth@PT2&3 3720
+000113 10 junk  test_run  same condition as run104  Vth@PT2&3 3710
 000114 10 junk  crashed
-000115 10 junk  test_run  same condition as run104  Vth for prototype-2&3 is 3700
-000116  9 test_run  same condition as run104  Vth for prototype-2&3 is 3700
-000117  9 test_run  same condition as run104  Vth for prototype-2&3 is 3710
-000118  9 test_run  same condition as run104  Vth for prototype-2&3 is 3720
-000119  9 test_run  same condition as run104  Vth for prototype-2&3 is 3730
-000120  9 test_run  same condition as run104  Vth for prototype-2&3 is 3740
-000121  9 test_run  same condition as run104  Vth for prototype-2&3 is 3750
-000122  9 test_run  same condition as run104  Vth for prototype-2&3 is 3760
-000123  9 test_run  same condition as run104  Vth for prototype-2&3 is 3770
-000124  9 test_run  same condition as run104  Vth for prototype-2&3 is 3780
-000125  9 test_run  same condition as run104  Vth for prototype-2&3 is 3790
-000126  9 test_run  same condition as run104  Vth for prototype-2&3 is 3800
+000115 10 junk  test_run  same condition as run104  Vth@PT2&3 3700
+000116  9 test_run  same condition as run104  Vth@PT2&3 3700
+000117  9 test_run  same condition as run104  Vth@PT2&3 3710
+000118  9 test_run  same condition as run104  Vth@PT2&3 3720
+000119  9 test_run  same condition as run104  Vth@PT2&3 3730
+000120  9 test_run  same condition as run104  Vth@PT2&3 3740
+000121  9 test_run  same condition as run104  Vth@PT2&3 3750
+000122  9 test_run  same condition as run104  Vth@PT2&3 3760
+000123  9 test_run  same condition as run104  Vth@PT2&3 3770
+000124  9 test_run  same condition as run104  Vth@PT2&3 3780
+000125  9 test_run  same condition as run104  Vth@PT2&3 3790
+000126  9 test_run  same condition as run104  Vth@PT2&3 3800
 000127  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3730
 000128  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3770
 000129  9 test_run  Vth@PT2 3770  Vth@PT3 3730  Vth@TXY1&2 3750  HV@PT2&3 1330
@@ -121,20 +121,20 @@
 000198  9 check_efficiency of Trackers
 000199  9 check_efficiency of tracker
 000200  9 check_HV Tracker HV setting is finished  HV scan start
-000201  9 check_HV of PT2 and PT3  HV 2150 
-000202  9 check_HV of PT2 and PT3  HV 2200 
-000203  9 check_HV of PT2 and PT3  HV 2250 
-000204  9 check_HV of PT2 and PT3  HV 2300 
-000205  9 check_HV of PT2 and PT3  HV 2350 
+000201  9 check_HV HV@PT2&3 2150 
+000202  9 check_HV HV@PT2&3 2200 
+000203  9 check_HV HV@PT2&3 2250 
+000204  9 check_HV HV@PT2&3 2300 
+000205  9 check_HV HV@PT2&3 2350 
 000206  9 check_HV of PT2 and PT3  HV@PT2   2300  HV@PT3   2400 
 000207  9 check_HV of PT2 and PT3  HV@PT2   2350  HV@PT3   2450 
-000208  9 check_HV of PT2 and PT3  2050 
-000209  9 check_HV of PT2 and PT3  2000 
-000210  9 check_HV of PT2 and PT3  1950 
-000211  9 check_HV of PT2 and PT3  1900 
-000212  9 check_HV of PT2 and PT3  1800 
-000213  9 check_HV of PT2 and PT3  1700 
-000214  9 check_HV of PT2 and PT3  1600  
+000208  9 check_HV HV@PT2&3 2050 
+000209  9 check_HV HV@PT2&3 2000 
+000210  9 check_HV HV@PT2&3 1950 
+000211  9 check_HV HV@PT2&3 1900 
+000212  9 check_HV HV@PT2&3 1800 
+000213  9 check_HV HV@PT2&3 1700 
+000214  9 check_HV HV@PT2&3 1600  
 000215  9 Vth@PT2&3 3760 
 000216  9 Vth@PT2&3 3770 
 000217  9 Vth@PT2&3 3780 
