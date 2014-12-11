@@ -1,6 +1,6 @@
 {
    TFile * output = new TFile("eff.root","UPDATE");
-   for (int runNo = 221; runNo<=225; runNo++){
+   for (int runNo = 79; runNo<=99; runNo++){
       TChain * c = new TChain("tree","tree");
       c->Add(Form("/data3/cdcTohoku/root/run_%06d_built.root",runNo));
       int tdcNhit[66];
