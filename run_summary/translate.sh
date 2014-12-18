@@ -53,5 +53,5 @@ gawk 'BEGIN{tht1=3750;tht2=3750;thp3=3750;thp2=3750;hvt1=1800;hvt2=1800;hvp3=170
           if($i=="Vth@PT3"){thp3=$(i+1);}\
           if($i=="Vth@PT2"){thp2=$(i+1);}\
        }\
-       print $1" "$2" "$3" "hvt1" "hvt2" "hvp3" "hvp2" "tht1" "tht2" "thp3" "thp2;}'\
+       print $1" "$2" "$12" "hvt1" "hvt2" "hvp3" "hvp2" "tht1" "tht2" "thp3" "thp2;}'\
        $log

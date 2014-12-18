@@ -1,6 +1,6 @@
 {
-   TFile * f = new TFile("../eff.root");
-   for (int i = 220; i<=226; i++ ){
+   TFile * f = new TFile("../root/eff.root");
+   for (int i = 231; i<=266; i++ ){
       TString name1 = Form("h1_%d",i);
       TString name2 = Form("h2_%d",i);
       TH1D * h1 = (TH1D*) f->Get(name1);
