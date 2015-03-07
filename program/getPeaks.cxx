@@ -24,7 +24,8 @@ int main(int argc, char** argv){
 	c->SetBranchAddress("clockNumberDriftTime",clockNumberDriftTime);
 	c->SetBranchAddress("adc",adc);
 
-	int height[32];
+	int height1;
+	int height2;
 	int iwire;
 	int adcwire[32];
 	int tdcNhitwire;
@@ -32,7 +33,8 @@ int main(int argc, char** argv){
 	sprintf(outputName,"peak_%d.root",runNo);
 	TFile * f = new TFile(outputName,"RECREATE");
 	TTree * t = new TTree("t","t");
-	t->Branch("h",height,"h[32]/I");
+	t->Branch("h1",&height1);
+	t->Branch("h2",&height2);
 	t->Branch("tdcNhit",&tdcNhitwire);
 	t->Branch("wire",&iwire);
 	t->Branch("adcwire",adcwire,"adcwire[32]/I");
@@ -47,11 +49,13 @@ int main(int argc, char** argv){
 			//printf("wire = %d, Nhit = %d\n",iwire,tdcNhitwire);
 			if (tdcNhitwire<=0) continue;
 			for(int ihit=0; ihit<tdcNhit[iwire]; ihit++){
-			   height[ihit] = -1;
+			   height1 = -1;
+			   height2 = -1;
 			   //printf("for hit[%d], start from %d and stop at%d\n",ihit,clockNumberDriftTime[iwire][ihit],ihit+1>=tdcNhitwire?31:clockNumberDriftTime[iwire][ihit+1]);
 			   for(int clk = clockNumberDriftTime[iwire][ihit]; clk<=(ihit+1>=tdcNhitwire?31:clockNumberDriftTime[iwire][ihit+1]); clk++){
-				   if (adc[iwire][clk]>height[ihit]){
-				   	   height[ihit]=adc[iwire][clk];
+				   if (adc[iwire][clk]>height1){
+				   	   if(height1==-1) height2 = adc[iwire][clk]; else height2=height1;
+				   	   height1=adc[iwire][clk];
 					   //printf("adc[%d][%d]=%d>height[%d]=%d\n",iwire,clk,adc[iwire][clk],ihit,height[ihit]);
 				   }
 			   }

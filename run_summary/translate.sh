@@ -37,6 +37,7 @@ sed -i "s/HV of PT2 and PT3 (HV\>/HV@PT2\&3/g" $log
 sed -i "s/_PT2/@PT2/g" $log
 sed -i "s/_PT3/@PT3/g" $log
 sed -i "s/Vth Scan *\([0-9][0-9]*\)/Vth@PT2\&3 \1/g" $log
+sed -i "s/\w* Scan$//g" $log
 
 gawk 'BEGIN{tht1=3750;tht2=3750;thp3=3750;thp2=3750;hvt1=1800;hvt2=1800;hvp3=1700;hvp2=1700;}{ \
        for(i=0; i<NF; i++){ \

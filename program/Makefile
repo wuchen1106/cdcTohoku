@@ -22,6 +22,7 @@ INCDIR += -I$(MYCOMMONTOOLSROOT)/MyRootInterface
 # Take root as an example. ( Root is a widely used package developed by CERN for analysing. )
 INCDIR += -I$(shell $(ROOTSYS)/bin/root-config --incdir)
 LIBDIR += $(shell $(ROOTSYS)/bin/root-config --glibs)
+LIBDIR += -lMinuit
 LIBS += -pthread -lm -ldl -rdynamic
 
 #--------------------------PART 3: about your own packages and the main program-------------------------------------------
@@ -31,9 +32,14 @@ LIBS += -pthread -lm -ldl -rdynamic
 PROJECT1 = getPeaks
 PROJECT2 = fit
 PROJECT3 = getEff
+PROJECT4 = getD
+PROJECT5 = myminuit
+PROJECT6 = getRunGraphs
+PROJECT7 = getFitGraphs
+PROJECT8 = getT0
 
 .PHONY: all
-all: $(PROJECT3) $(PROJECT2) $(PROJECT1)
+all: $(PROJECT5) $(PROJECT4) $(PROJECT3) $(PROJECT2) $(PROJECT1) $(PROJECT6) $(PROJECT7) $(PROJECT8)
 
 # Object list for user defined packages
 OBJ = 
@@ -47,9 +53,24 @@ $(PROJECT2): $(OBJ) $(PROJECT2).cxx
 $(PROJECT3): $(OBJ) $(PROJECT3).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT3).cxx $(OBJ) -o $(PROJECT3)
 
+$(PROJECT4): $(OBJ) $(PROJECT4).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT4).cxx $(OBJ) -o $(PROJECT4)
+
+$(PROJECT5): $(OBJ) $(PROJECT5).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT5).cxx $(OBJ) -o $(PROJECT5)
+
+$(PROJECT6): $(OBJ) $(PROJECT6).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT6).cxx $(OBJ) -o $(PROJECT6)
+
+$(PROJECT7): $(OBJ) $(PROJECT7).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT7).cxx $(OBJ) -o $(PROJECT7)
+
+$(PROJECT8): $(OBJ) $(PROJECT8).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT8).cxx $(OBJ) -o $(PROJECT8)
+
 #--------------------------PART 4: about make options-------------------------------------------
 # You can create new options to realise special functions
 # Here is an example showing how to make clean and make a specified user defined package
 .PHONY: clean
 clean:
-	$(RM) $(PROJECT1) $(PROJECT2)
+	$(RM) $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6) $(PROJECT7) $(PROJECT8)
