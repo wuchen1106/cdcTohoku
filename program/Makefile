@@ -37,9 +37,10 @@ PROJECT5 = myminuit
 PROJECT6 = getRunGraphs
 PROJECT7 = getFitGraphs
 PROJECT8 = getT0
+PROJECT8 = getAna
 
 .PHONY: all
-all: $(PROJECT5) $(PROJECT4) $(PROJECT3) $(PROJECT2) $(PROJECT1) $(PROJECT6) $(PROJECT7) $(PROJECT8)
+all: $(PROJECT5) $(PROJECT4) $(PROJECT3) $(PROJECT2) $(PROJECT1) $(PROJECT6) $(PROJECT7) $(PROJECT8) $(PROJECT9)
 
 # Object list for user defined packages
 OBJ = 
@@ -68,9 +69,12 @@ $(PROJECT7): $(OBJ) $(PROJECT7).cxx
 $(PROJECT8): $(OBJ) $(PROJECT8).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT8).cxx $(OBJ) -o $(PROJECT8)
 
+$(PROJECT9): $(OBJ) $(PROJECT9).cxx
+	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT9).cxx $(OBJ) -o $(PROJECT9)
+
 #--------------------------PART 4: about make options-------------------------------------------
 # You can create new options to realise special functions
 # Here is an example showing how to make clean and make a specified user defined package
 .PHONY: clean
 clean:
-	$(RM) $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6) $(PROJECT7) $(PROJECT8)
+	$(RM) $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6) $(PROJECT7) $(PROJECT8) $(PROJECT9)

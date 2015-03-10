@@ -556,7 +556,7 @@ int main(int argc, char** argv){
 			double sigma = v_sigma[index];
 			int n = v_n[index];
 			// FIXME
-			if (n>400&&sigma<sigmai){
+			if (n>100&&sigma<sigmai){
 			//if (dist<6){
 				if (dist>=0){vdtr.push_back(center); vddr.push_back(dist);}
 				if (dist<=0){vdtl.push_back(center); vddl.push_back(dist);}
