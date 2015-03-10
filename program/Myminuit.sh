@@ -114,7 +114,7 @@
 #nohup ./myminuit 142 1 0309 0 0 100 &
 #nohup ./myminuit 189 1 0309 0 0 100 &
 #nohup ./myminuit 193 1 0309 0 0 100 &
-nohup ./myminuit 194 1 0309 0 0 100 &
+#nohup ./myminuit 194 1 0309 0 0 100 &
 #nohup ./myminuit 215 1 0309 0 0 100 &
 #nohup ./myminuit 216 1 0309 0 0 100 &
 #nohup ./myminuit 217 1 0309 0 0 100 &
@@ -129,9 +129,9 @@ nohup ./myminuit 194 1 0309 0 0 100 &
 #nohup ./myminuit 251 1 0309 0 0 100 &
 
 #nohup ./getFitGraphs 142 1 0309 0 0 7 &
-#nohup ./getFitGraphs 189 1 0309 0 0 7 &
-#nohup ./getFitGraphs 193 1 0309 0 0 7 &
-#nohup ./getFitGraphs 194 1 0309 0 0 7 &
+nohup ./getFitGraphs 189 1 0309 0 0 7 &
+nohup ./getFitGraphs 193 1 0309 0 0 7 &
+nohup ./getFitGraphs 194 1 0309 0 0 7 &
 #nohup ./getFitGraphs 215 1 0309 0 0 7 &
 #nohup ./getFitGraphs 216 1 0309 0 0 7 &
 #nohup ./getFitGraphs 217 1 0309 0 0 7 &
