@@ -37,3 +37,52 @@
 #nohup ./getRunGraphs 226 1 nocut 0 & # C2H8
 #nohup ./getRunGraphs 250 1 nocut 0 & # C2H8
 #nohup ./getRunGraphs 251 1 nocut 0 & # C2H8
+
+#=====================C4H10==========================
+#nohup ./getD 227 &
+#nohup ./getD 228 &
+#nohup ./getD 229 &
+#nohup ./getD 230 &
+#nohup ./getD 231 &
+#nohup ./getD 232 &
+#nohup ./getD 233 &
+#nohup ./getD 234 &
+#nohup ./getD 235 &
+#nohup ./getD 236 &
+#nohup ./getD 237 &
+#nohup ./getD 238 &
+#nohup ./getD 239 &
+#nohup ./getD 240 &
+#nohup ./getD 241 &
+#nohup ./getD 242 &
+#nohup ./getD 243 &
+#nohup ./getD 244 &
+#nohup ./getD 245 &
+#nohup ./getD 246 &
+#nohup ./getD 247 &
+#nohup ./getD 248 &
+#nohup ./getD 249 &
+#
+#nohup ./getRunGraphs 227 1 0309 0 &
+#nohup ./getRunGraphs 228 1 0309 0 &
+#nohup ./getRunGraphs 229 1 0309 0 &
+#nohup ./getRunGraphs 230 1 0309 0 &
+#nohup ./getRunGraphs 231 1 0309 0 &
+#nohup ./getRunGraphs 232 1 0309 0 &
+#nohup ./getRunGraphs 233 1 0309 0 &
+#nohup ./getRunGraphs 234 1 0309 0 &
+#nohup ./getRunGraphs 235 1 0309 0 &
+#nohup ./getRunGraphs 236 1 0309 0 &
+#nohup ./getRunGraphs 237 1 0309 0 &
+#nohup ./getRunGraphs 238 1 0309 0 &
+#nohup ./getRunGraphs 239 1 0309 0 &
+#nohup ./getRunGraphs 240 1 0309 0 &
+#nohup ./getRunGraphs 241 1 0309 0 &
+#nohup ./getRunGraphs 242 1 0309 0 &
+#nohup ./getRunGraphs 243 1 0309 0 &
+#nohup ./getRunGraphs 244 1 0309 0 &
+#nohup ./getRunGraphs 245 1 0309 0 &
+nohup ./getRunGraphs 246 1 0309 0 &
+nohup ./getRunGraphs 247 1 0309 0 &
+nohup ./getRunGraphs 248 1 0309 0 &
+nohup ./getRunGraphs 249 1 0309 0 &
