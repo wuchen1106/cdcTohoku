@@ -81,6 +81,8 @@
 #nohup ./getFitGraphs 250 1 nocut 1 0 7 &
 #nohup ./getFitGraphs 251 1 nocut 1 0 7 &
 
+#nohup ./getFitGraphs 221 1 nocut 3 0 7 &
+
 # ========================================
 
 #nohup ./myminuit 216 1 hcut 0 0 100 &
@@ -91,7 +93,7 @@
 #nohup ./getFitGraphs 216 1 hcut 0 0 7 &
 #nohup ./getFitGraphs 221 1 hcut 0 0 7 &
 #nohup ./getFitGraphs 222 1 hcut 0 0 7 &
-nohup ./getFitGraphs 251 1 hcut 0 0 7 &
+#nohup ./getFitGraphs 251 1 hcut 0 0 7 &
 
 #nohup ./myminuit 221 1 hcut 0 1 100 &
 
@@ -100,3 +102,61 @@ nohup ./getFitGraphs 251 1 hcut 0 0 7 &
 #nohup ./myminuit 221 1 hcut 0 2 100 &
 
 #nohup ./getFitGraphs 221 1 hcut 2 0 7 &
+
+# ========================================
+#nohup ./myminuit 221 1 t0 0 0 100 &
+#nohup ./myminuit 251 1 t0 0 0 100 &
+
+#nohup ./getFitGraphs 221 1 t0 0 0 7 &
+#nohup ./getFitGraphs 251 1 t0 0 0 7 &
+
+# ========================================
+#nohup ./myminuit 142 1 0309 0 0 100 &
+#nohup ./myminuit 189 1 0309 0 0 100 &
+#nohup ./myminuit 193 1 0309 0 0 100 &
+nohup ./myminuit 194 1 0309 0 0 100 &
+#nohup ./myminuit 215 1 0309 0 0 100 &
+#nohup ./myminuit 216 1 0309 0 0 100 &
+#nohup ./myminuit 217 1 0309 0 0 100 &
+#nohup ./myminuit 218 1 0309 0 0 100 &
+#nohup ./myminuit 219 1 0309 0 0 100 &
+#nohup ./myminuit 220 1 0309 0 0 100 &
+#nohup ./myminuit 221 1 0309 0 0 100 &
+#nohup ./myminuit 222 1 0309 0 0 100 &
+#nohup ./myminuit 250 1 0309 0 0 100 &
+#nohup ./myminuit 250 1 hcut0 0 0 100 &
+#nohup ./myminuit 250 1 hcut2 0 0 100 &
+#nohup ./myminuit 251 1 0309 0 0 100 &
+
+#nohup ./getFitGraphs 142 1 0309 0 0 7 &
+#nohup ./getFitGraphs 189 1 0309 0 0 7 &
+#nohup ./getFitGraphs 193 1 0309 0 0 7 &
+#nohup ./getFitGraphs 194 1 0309 0 0 7 &
+#nohup ./getFitGraphs 215 1 0309 0 0 7 &
+#nohup ./getFitGraphs 216 1 0309 0 0 7 &
+#nohup ./getFitGraphs 217 1 0309 0 0 7 &
+#nohup ./getFitGraphs 218 1 0309 0 0 7 &
+#nohup ./getFitGraphs 219 1 0309 0 0 7 &
+#nohup ./getFitGraphs 220 1 0309 0 0 7 &
+#nohup ./getFitGraphs 221 1 0309 0 0 7 &
+#nohup ./getFitGraphs 222 1 0309 0 0 7 &
+#nohup ./getFitGraphs 250 1 0309 0 0 7 &
+#nohup ./getFitGraphs 250 1 hcut0 0 0 7 &
+#nohup ./getFitGraphs 250 1 hcut2 0 0 7 &
+#nohup ./getFitGraphs 251 1 0309 0 0 7 &
+
+#nohup ./myminuit 142 1 0309 0 1 100 &
+#nohup ./myminuit 189 1 0309 0 1 100 &
+#nohup ./myminuit 221 1 0309 0 1 100 &
+#nohup ./myminuit 222 1 0309 0 1 100 &
+#nohup ./myminuit 250 1 0309 0 1 100 &
+#nohup ./myminuit 251 1 0309 0 1 100 &
+
+#nohup ./getFitGraphs 142 1 0309 1 0 7 &
+#nohup ./getFitGraphs 189 1 0309 1 0 7 &
+#nohup ./getFitGraphs 221 1 0309 1 0 7 &
+#nohup ./getFitGraphs 222 1 0309 1 0 7 &
+#nohup ./getFitGraphs 250 1 0309 1 0 7 &
+#nohup ./getFitGraphs 251 1 0309 1 0 7 &
+
+#nohup ./getFitGraphs 221 1 0309 3 0 7 &

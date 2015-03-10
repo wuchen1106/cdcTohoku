@@ -28,7 +28,7 @@
 
 int power2_15 = pow(2,15);
 
-#define EVENTDISPLAY
+//#define EVENTDISPLAY
 
 Double_t Z1[66],Y1[66],X1[66],errord[66];// left hand side
 Double_t Z2[66],Y2[66],X2[66]; // right hand side

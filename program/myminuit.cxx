@@ -553,8 +553,8 @@ int main(int argc, char** argv){
 		Z2[id_geom] = z2_geom+378;
 		//FIXME
 		if (id_geom>=33&&id_geom<60){
-			Y1[id_geom] += 0.625;
-			Y2[id_geom] += 0.625;
+			Y1[id_geom] += 0.5;
+			Y2[id_geom] += 0.5;
 		}
 		else if (id_geom>=6&&id_geom<32){
 			Y1[id_geom] += 0;
