@@ -65,7 +65,7 @@ int main(int argc, char** argv){
 	int tr_eff = 0;
 
 	int ntot = ((TTree*)((new TFile(Form("../root/d_%d.root",startNo)))->Get("t")))->GetEntries();
-	int ntot2 = ((TTree*)((new TFile(Form("../root/fit_%d_%d."+suffix+"%d.root",startNo,nFiles,iterationNo)))->Get("t")))->GetEntries();
+	int ntot2 = ((TTree*)((new TFile(Form("../root/fit.%d."+suffix+"%d.root",startNo,iterationNo)))->Get("t")))->GetEntries();
 
 	//===================Get ROOT Files============================
 	TChain * c = new TChain("t","t");
@@ -110,18 +110,21 @@ int main(int argc, char** argv){
 	int binl,binr,binc;
 	TF1 *f;
 	for(int ir = 0; ir<8; ir++){
+		f  = new TF1(Form("f_%d",ir),"gaus",-2,2);
 		if (reso_p2[ir]->Integral()){
-			f  = new TF1(Form("f_%d",ir),"gaus",-2,2);
 			f->SetParameters(reso_p2[ir]->GetBinContent(reso_p2[ir]->GetMaximumBin()),0,0.2);
 			binc = reso_p2[ir]->GetMaximumBin();
 			reso_p2[ir]->Fit(Form("f_%d",ir),"qN0","",reso_p2[ir]->GetBinCenter(binc-8),reso_p2[ir]->GetBinCenter(binc+8));
 			center = f->GetParameter(1);
 			sigma = f->GetParameter(2);
+			if (fabs(center)>1) center = 0;
 			binl = reso_p2[ir]->FindBin(center-0.6);
 			binr = reso_p2[ir]->FindBin(center+0.6);
+			if (binl<=0) binl = 1;
 			eff0p6 = reso_p2[ir]->Integral(binl,binr)/Neffi_p2[ir];
 			binl = reso_p2[ir]->FindBin(center-2);
 			binr = reso_p2[ir]->FindBin(center+2);
+			if (binl<=0) binl = 1;
 			eff2 = reso_p2[ir]->Integral(binl,binr)/Neffi_p2[ir];
 		}
 		else{
@@ -137,11 +140,14 @@ int main(int argc, char** argv){
 			reso_p3[ir]->Fit(Form("f_%d",ir),"qN0","",reso_p3[ir]->GetBinCenter(binc-8),reso_p3[ir]->GetBinCenter(binc+8));
 			center = f->GetParameter(1);
 			sigma = f->GetParameter(2);
+			if (fabs(center)>1) center = 0;
 			binl = reso_p3[ir]->FindBin(center-0.6);
 			binr = reso_p3[ir]->FindBin(center+0.6);
+			if (binl<=0) binl = 1;
 			eff0p6 = reso_p3[ir]->Integral(binl,binr)/Neffi_p3[ir];
 			binl = reso_p3[ir]->FindBin(center-2);
 			binr = reso_p3[ir]->FindBin(center+2);
+			if (binl<=0) binl = 1;
 			eff2 = reso_p3[ir]->Integral(binl,binr)/Neffi_p3[ir];
 		}
 		else{

@@ -29,21 +29,18 @@ LIBS += -pthread -lm -ldl -rdynamic
 
 # Names of user defined packages
 # Change this name to your program which contains the main function
-PROJECT1 = getPeaks
-PROJECT2 = fit
-PROJECT3 = getEff
-PROJECT4 = getD
-PROJECT5 = myminuit
-PROJECT6 = getRunGraphs
-PROJECT7 = getFitGraphs
-PROJECT8 = getT0
-PROJECT8 = getAna
+PROJECT1 = getEff
+PROJECT2 = getD
+PROJECT3 = myminuit
+PROJECT4 = getAna
+PROJECT5 = draw
+PROJECT6 = getACD
 
 .PHONY: all
-all: $(PROJECT5) $(PROJECT4) $(PROJECT3) $(PROJECT2) $(PROJECT1) $(PROJECT6) $(PROJECT7) $(PROJECT8) $(PROJECT9)
+all: $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6)
 
 # Object list for user defined packages
-OBJ = 
+OBJ =
 
 $(PROJECT1): $(OBJ) $(PROJECT1).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT1).cxx $(OBJ) -o $(PROJECT1)
@@ -63,18 +60,9 @@ $(PROJECT5): $(OBJ) $(PROJECT5).cxx
 $(PROJECT6): $(OBJ) $(PROJECT6).cxx
 	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT6).cxx $(OBJ) -o $(PROJECT6)
 
-$(PROJECT7): $(OBJ) $(PROJECT7).cxx
-	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT7).cxx $(OBJ) -o $(PROJECT7)
-
-$(PROJECT8): $(OBJ) $(PROJECT8).cxx
-	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT8).cxx $(OBJ) -o $(PROJECT8)
-
-$(PROJECT9): $(OBJ) $(PROJECT9).cxx
-	$(CXX) $(CXXFLAGS) $(INCDIR) $(LIBDIR) $(LIBS) $(PROJECT9).cxx $(OBJ) -o $(PROJECT9)
-
 #--------------------------PART 4: about make options-------------------------------------------
 # You can create new options to realise special functions
 # Here is an example showing how to make clean and make a specified user defined package
 .PHONY: clean
 clean:
-	$(RM) $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6) $(PROJECT7) $(PROJECT8) $(PROJECT9)
+	$(RM) $(PROJECT1) $(PROJECT2) $(PROJECT3) $(PROJECT4) $(PROJECT5) $(PROJECT6)
